@@ -1,0 +1,15 @@
+Loki Setup Notes
+
+How I started Loki:
+
+    Ran Loki locally using Docker:
+
+  docker run -d --name=loki -p 3100:3100 grafana/loki:latest
+
+Log Forwarding:
+
+    Configured Docker container logs to forward to Loki on port 3100
+
+
+Command used to view logs:
+  docker logs loki
